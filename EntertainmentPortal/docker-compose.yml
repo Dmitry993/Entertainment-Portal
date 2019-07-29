@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  ep.dotsboxes.web:
+    image: ${DOCKER_REGISTRY-}epdotsboxesweb
+    build:
+      context: .
+      dockerfile: EP.DotsBoxes.Web/Dockerfile
+    ports:
+    - 8080:80
+
+  ep.dotsboxes.security:
+    image: ${DOCKER_REGISTRY-}epdotsboxessecurity
+    build:
+      context: .
+      dockerfile: EP.DotsBoxes.Security/Dockerfile
+    ports:
+    - 8084:80

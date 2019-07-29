@@ -47,7 +47,7 @@ namespace EP.DotsBoxes.Security
                 options.Events.RaiseErrorEvents = true;
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseFailureEvents = true;
-                options.Events.RaiseSuccessEvents = true;
+                options.Events.RaiseSuccessEvents = true;                
             })
                 //.AddInMemoryIdentityResources(Config.GetIdentityResources())
                 //.AddInMemoryApiResources(Config.GetApis())

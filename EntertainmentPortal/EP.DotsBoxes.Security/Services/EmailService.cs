@@ -24,7 +24,7 @@ namespace EP.DotsBoxes.Security.Services
             using (var client = new SmtpClient())
             {
                 await client.ConnectAsync("smtp.gmail.com", 465, true);                
-                await client.AuthenticateAsync("ep.confirm@gmail.com", "password");
+                await client.AuthenticateAsync("ep.confirm@gmail.com", "casablanka4850");
                 await client.SendAsync(emailMessage);
 
                 await client.DisconnectAsync(true);
